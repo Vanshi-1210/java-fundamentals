@@ -13,11 +13,17 @@ public class MultiplicationTable {
         //     System.out.println(num*i);
         // }
         // using while loop
+        // int i=1;
+        // while(i<=10){
+        //     System.out.println(num*i);
+        //     i++;
+        // }
+        // using do while loop
         int i=1;
-        while(i<=10){
+        do{
             System.out.println(num*i);
             i++;
-        }
+        }while(i<=10);
         sc.close();
     }
 }
