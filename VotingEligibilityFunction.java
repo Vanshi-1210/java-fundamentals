@@ -1,0 +1,21 @@
+import java.util.*;
+public class VotingEligibilityFunction {
+
+    public static void checkVotingElegibility(int age){
+        if(age>=18){
+            System.out.println("Eligible for vote");
+        }
+        else{
+            System.out.println("Not Eligible for vote");
+        }
+        return;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your age:");
+        int age=sc.nextInt();
+        checkVotingElegibility(age);
+        sc.close();
+    }
+}
