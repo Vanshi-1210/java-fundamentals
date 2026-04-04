@@ -1,0 +1,23 @@
+// Program: Sum of Odd Numbers
+// Description: This program defines a function to calculate and print the sum of all odd numbers from 1 to n entered by the user.
+import java.util.*;
+public class SumOfOddNumbersFunction {
+
+
+public static void CalculateSumOfOddNumbers(int n){
+    int sum=0;
+    for(int i=1;i<=n;i++){
+        if(i%2!=0){
+            sum=sum+i;
+        }
+    }
+    System.out.println("sum of n odd numbers:"+sum);
+}
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the value of n:");
+        int n=sc.nextInt();
+      CalculateSumOfOddNumbers(n);
+      sc.close();
+    }
+}
